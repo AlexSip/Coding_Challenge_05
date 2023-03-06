@@ -109,8 +109,7 @@ for i in data:
                                join_operation, join_type, field_mapping, match_option,
                                search_radius, distance_field_name)
 
-    # 5. Check that the heatmap is created and delete the intermediate files (e.g. species shapefile and fishnet). Hint:
-    # arcpy.Delete_management()..
+    # Check that the heatmap is created and delete the intermediate files (e.g. species shapefile and fishnet). 
 
     if arcpy.Exists(out_feature_class):
         print("Created Heatmap file successfully!")
